@@ -1,0 +1,55 @@
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    margin-bottom: -8px;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+label{
+    align-self: flex-start;
+}
+form select{
+    width: 380px;
+    height: 30px;
+    align-self: start;
+}
+input[type="text"]{
+    width: 400px;
+    height: 25px;
+}
+input[type="number"]{
+    width: 400px;
+    height: 25px;
+}
+input[type="email"]{
+    width: 400px;
+    height: 25px;
+}
+form textarea{
+    width: 400px;
+    height: 150px;
+}
+input[type="submit"]{
+   align-self: flex-start;
+}
+div[class="botones"]{
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+}
+div[class="radio"]{
+    align-items: flex-start;
+    flex-direction: column;
+    width: 410px;
+}
