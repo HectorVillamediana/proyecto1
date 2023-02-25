@@ -4,6 +4,8 @@
     padding: 0px;
     box-sizing: border-box;
   }
+
+  /* HEADER */
 h1{
     color: red;
     font-weight: bolder;
@@ -11,7 +13,7 @@ h1{
     height: 14px;
     margin: 20px 0 30px 0;
     font-family: 'Roboto Slab', serif;
-    letter-spacing:4px;x`x``
+    letter-spacing:4px;
 }
 p.titulo{
     text-align: center;
@@ -21,14 +23,13 @@ p.titulo{
 hr{
     margin: 10px;
 }
-
+ /* NAVBAR */
 nav{
     background-color: gray;
     border: 2px solid black;
     border-radius: 5px;
     height: 90px;
     display: grid;
-    gap: 15px;
     grid-template-columns: repeat(17, 1fr);
     grid-template-rows: repeat(4, 1fr);
     align-items: end;
@@ -49,41 +50,57 @@ button a{
     letter-spacing: 1px;
     
 }
+button a:hover{
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid white;
+}
 .icono{
     width: 40px;
     height: 40px;
     grid-column: 9 / 10;
+    margin-top: 5px;
 
 }
 .boton1{
     grid-column: 7 / 8;
-    grid-row: 2;
-    align-self: flex-end;
+    grid-row: 3;
+    justify-self: end;
+    margin-left: 15px;
+
 }
 .boton2{
     grid-column: 8 / 9;
-    grid-row: 2;
-    align-self: flex-end;
+    grid-row: 3;
+    justify-self: end;
+    margin-left: 20px;
+  
 }
 .boton3{
     grid-column: 9 / 10;
-    grid-row: 2;
-    align-self: flex-end;
+    grid-row: 3;
+    justify-self: end;
+    margin-left: 10px;
+ 
 }
 .boton4{
     grid-column: 10 / 11;
-    grid-row: 2;
-    align-self: flex-end;
+    grid-row: 3;
+    justify-self: end;
+    margin-left: 30px;
 }
+
+/* MAIN CONTAINER */
+
 main{
-    background-image: url('img/perro.webp');
+    background-image: url('../img/perro.webp');
     height: 550px;
     margin-top: 20px;
     border: 2px solid black;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:local;
     margin-bottom: 30px;
     border-radius: 0 0 0 10%;
 }
@@ -93,11 +110,9 @@ h2{
     margin-bottom: 10px;
 }
 a.order{
-    text-align: center;
-    margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 47%;
+    margin-left: 46%;
     background-color: yellow;
     border-radius: 30px;
     border: 2px solid white;
@@ -161,6 +176,9 @@ a[class|="textoimagen"]:hover{
     align-self: end;
     margin-bottom: 20px;
 }
+
+/* FEATURED PRODUCTS */
+
 h3{
     color: red;
     font-weight: bold;
@@ -233,6 +251,9 @@ a[class|="textoes"]{
 a[class|="textoes"]:hover{
     border: solid blue 2px;
     color: red;
+
+    /* FOOTER */
+
 }
 footer{
     text-align: center;
